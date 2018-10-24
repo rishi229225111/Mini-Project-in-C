@@ -6,7 +6,7 @@
 #include<time.h>
 #include<dos.h>
 
-void displayscore()
+void display_score()
  {
  char name[20];
  float s;
@@ -34,7 +34,7 @@ void help()
  printf("\n\n\tat the end and displayed. If you secure highest score, your score");
  printf("\n\n\twill be recorded. So BEST OF LUCK.");
  }
-void writescore(float score, char plnm[20])
+void write_score(float score, char plnm[20])
  {
  float sc;
  char nm[20];
@@ -73,7 +73,7 @@ int main()
      choice=toupper(getch());
      if (choice=='V')
  {
- displayscore();
+ display_score();
  goto mainhome;
  }
      else if (choice=='Q')
